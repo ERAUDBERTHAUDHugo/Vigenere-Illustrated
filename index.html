@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e4339b56d6.js" crossorigin="anonymous"></script>
+  <title> VigenereAlgoritm</title>
+</head>
+<body>
+	<p>Entrez un message à chiffrer grâce à l'algorithme de Vigenère : </p>
+	<input id="message" type="text" name="message" placeholder="Entrez le message">
+	<p>Entrez la clé pour l'encodage du message : </p>
+	<input id="key" type="text" name="key" placeholder="Entrez la clé">
+	</br>
+	<button onclick="encoderMess(this)">Chiffrer</button>
+	<p> Message chiffré : </p>
+	<div id="divAff"></div>
+	<div id="how">
+		<p>Comment ça marche ?</p> 	
+		<div id="tabMessageKey"></div>
+		<div id="arrowRight" class="arrow" onclick="nextRight(this)"><i class="fas fa-arrow-right fa-3x"></i></div>
+		<div id="arrowLeft" class="arrow" onclick="nextLeft(this)"><i class="fas fa-arrow-left fa-3x"></i></div>
+		<div id="divTabExplanation"></div>
+	</div>
+</body>
+<script src="app.js"></script>
+</html>
+
+
